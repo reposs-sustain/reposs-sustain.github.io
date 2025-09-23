@@ -16,7 +16,9 @@ CMS.registerPreviewTemplate('project', Project);
 CMS.registerPreviewTemplate('contact', Contact);
 
 // Register CSS
-fetch('/')
+const basePath = window.__BASE_PATH__ || '/';
+
+fetch(basePath)
   .then((response) => response.text())
   .then((html) => {
     const f = document.createElement('html');

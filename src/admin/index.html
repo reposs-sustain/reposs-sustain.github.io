@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-known-roots="404.html,about,admin,assets,blog,community,contact,educational-resources,index.html,pages,posts,project-tags,projects,scripts,src,tags,team,tools,tools-data" data-base-path="auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,6 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <!-- Include Netlify Identity for authentication -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script type="module" src="/admin/preview-templates/index.js"></script>
+    <script>(function(){var d=document;var attr=d.documentElement.getAttribute("data-base-path");var base="/";var knownAttr=d.documentElement.getAttribute("data-known-roots");var known=knownAttr?knownAttr.split(","):[];if(attr&&attr!=="auto"){base=attr;}else{var segments=location.pathname.split("/").filter(Boolean);if(segments.length&&known.indexOf(segments[0])===-1){base="/"+segments[0]+"/";}}if(base.slice(-1)!=="/"){base+="/";}window.__BASE_PATH__=base;var script=d.createElement("script");script.type="module";script.src=base+"admin/preview-templates/index.js";d.head.appendChild(script);}());</script>
   </body>
 </html>
